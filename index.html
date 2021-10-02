@@ -1,0 +1,53 @@
+<!DOCTYPE html><html><head>
+  <script src="p5.js"></script>
+  <script src="p5.sound.min.js"></script>
+  <script src="ml5.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="icon" href="https://img.icons8.com/ios-filled/50/000000/floating-guru.png" type="image/gif" sizes="16x16">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&amp;family=Roboto:wght@500&amp;display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt&amp;display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+  <meta charset="utf-8">
+
+</head>
+
+<body>
+  
+<!--   <h5 id="poseName">Welcome</h5> -->
+      <div class="home">
+        <div id="home-left-back" class="home-left">
+            <div class="progress">
+                <div class="progress-value" id="pg-val"></div>
+            </div>
+        </div>
+        <div class="home-right">
+          <h2 style="color:white">Select Yoga posture to practice</h2>
+          <select id="mySelect" onchange="poseselected()">
+            <option></option>
+            <option value="Warrior">Warrior</option>
+            <option value="Mountain">Mountain</option>
+            <option value="Bend">Bend</option>
+          </select>
+            <div class="heading">
+                <h1 style="margin-top:1rem;color:white" id="posehead"></h1>
+            </div>
+            
+            <div id="imgbox" class="box" style="display:none">
+                <img id="imgsrc" src="alt=&quot;&quot;">
+            </div>
+        
+
+            <div style="text-align: center;" class="timer">
+                <h1 id="count"></h1>
+            </div>
+        </div>
+
+    </div>
+  <script src="timer.js"></script> 
+  <script src="sketch.js"></script> 
+
+
+</body></html>
